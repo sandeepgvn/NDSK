@@ -1,1 +1,2 @@
 C:\Users\sande\source\repos\NDSK\NDSK\obj\Debug\ndsk.esproj.CoreCompileInputs.cache
+C:\Users\sande\OneDrive\Documents\GitHub\NDSK\NDSK\obj\Debug\ndsk.esproj.CoreCompileInputs.cache
