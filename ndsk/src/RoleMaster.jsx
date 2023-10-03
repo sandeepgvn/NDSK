@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from "./ROPDataForm.css";
-
 function RoleMasterForm() {
     const [roleName, setRoleName] = useState('');
     const [roleDescription, setRoleDescription] = useState('');

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './ROPDataForm.css'; // Import a CSS file for styling
+import styles from "./ROPDataForm.css";
+
 function PatientRegistrationForm() {
     const [name, setName] = useState('');
     const [gender, setGender] = useState('Male');

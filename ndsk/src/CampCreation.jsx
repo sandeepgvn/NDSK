@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './ROPDataForm.css'; // Import a CSS file for styling
-
+import styles from "src/ROPDataForm.css";
 function CampCreationForm() {
     const [campName, setCampName] = useState('');
     const [contactPerson, setContactPerson] = useState('');
