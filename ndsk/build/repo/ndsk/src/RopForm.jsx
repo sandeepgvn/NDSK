@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '/.RopDataForm.css'
+import styles from "./ROPDataForm.css";
 function ROPDataForm() {
   // Define state variables for form fields
   const [dateOfExamination, setDateOfExamination] = useState('');

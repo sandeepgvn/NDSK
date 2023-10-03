@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ROPDataForm.css'; // Import a CSS file for styling
+import styles from "./ROPDataForm.css";
 
 function RoleMasterForm() {
     const [roleName, setRoleName] = useState('');

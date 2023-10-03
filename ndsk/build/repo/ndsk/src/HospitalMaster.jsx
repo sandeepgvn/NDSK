@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './ROPDataForm.css'; // Import a CSS file for styling
-
+import styles from "./ROPDataForm.css";
 function HospitalMasterForm() {
     // Define state variables for form fields
     const [hospitalName, setHospitalName] = useState('');
