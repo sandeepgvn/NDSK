@@ -1,0 +1,48 @@
+.menu-container {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin-top: 20px;
+    position: relative;
+    padding: 20px;
+    display: flex; /* Display items horizontally */
+}
+
+.menu-item-container {
+    margin-right: 20px; /* Add spacing between menu items */
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-item {
+    cursor: pointer;
+    user-select: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    opacity: 0;
+    transform: translateY(-10px); /* Start slightly above and fade in */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+    .submenu.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0); /* Move to its normal position */
+    }
+
+.submenu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+    .submenu-item:last-child {
+        border-bottom: none;
+    }
