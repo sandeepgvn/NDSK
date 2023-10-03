@@ -8,6 +8,8 @@ import CampDataCollectionForm from './CampDataCollectionForm'; // Import your Ca
 import CampCreation from './CampCreation'; // Import your CampCreation component
 import RoleMaster from './RoleMaster'; // Import your RoleMaster component
 import Dashboard from './Dashboard'; // Import your Dashboard component
+import PatientRegistration from './PatientRegistration'; // Import your Dashboard component
+
 //import Menu from './Menu';
 
 function App() {
@@ -27,6 +29,9 @@ function App() {
 
     const [showDashboard, setDashboard] = useState(false);
 
+    const [showPatientRegistration, setPatientRegistration] = useState(false);
+
+
     const handleLoginClick = () => {
         setShowLoginForm(true);
     };
@@ -42,6 +47,7 @@ function App() {
         setCampCreation(false);
         setRoleMaster(false);
         setDashboard(false);
+        setPatientRegistration(false);
     }
 
     const toggleDashboard = () => {
@@ -51,6 +57,7 @@ function App() {
         setCampCreation(false);
         setRoleMaster(false);
         setDashboard(false);
+        setPatientRegistration(false);
     }
 
     const toggleCampDataCollectionForm = () => {
@@ -60,6 +67,7 @@ function App() {
         setCampCreation(false);
         setRoleMaster(false);
         setDashboard(false);
+        setPatientRegistration(false);
     };
 
     const toggleHospitalMaster = () => {
@@ -69,6 +77,7 @@ function App() {
         setCampCreation(false);
         setRoleMaster(false);
         setDashboard(false);
+        setPatientRegistration(false);
     };
 
     const toggleCampCreation = () => {
@@ -78,6 +87,7 @@ function App() {
         setCampDataCollectionForm(false);
         setRoleMaster(false);
         setDashboard(false);
+        setPatientRegistration(false);
     };
 
     const toggleRoleMaster = () => {
@@ -87,6 +97,18 @@ function App() {
         setShowROPForm(false);
         setCampDataCollectionForm(false);
         setDashboard(false);
+        setPatientRegistration(false);
+    };
+
+    const togglePatientRegistration = () => {
+        setPatientRegistration(!showPatientRegistration);
+        setRoleMaster(false);
+        setCampCreation(false);
+        setHospitalMaster(false);
+        setShowROPForm(false);
+        setCampDataCollectionForm(false);
+        setDashboard(false);
+        setPatientRegistration(false);
     };
 
     const handleHospitalCreationClick = () => {
@@ -166,6 +188,8 @@ function App() {
                             <div className="submenu-item" onClick={toggleROPForm}>ROP</div>
                             <div className="submenu-item">Low Vision</div>
                             <div className="submenu-item" onClick={toggleCampDataCollectionForm}>Community Ophthalmology</div>
+
+                            <div className="submenu-item" onClick={togglePatientRegistration}>Patient Registration</div>
                         <div className="submenu-item">Patient Follow-up</div>
                         <div className="submenu-item">Dashboards</div>
                         <div className="submenu-item">Reports</div>
